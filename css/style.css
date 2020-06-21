@@ -12,6 +12,8 @@
     border-radius: 0;
     color: white;
     font-weight: 700;
+    width: 100%;
+    position: fixed;
 }
 
 .collapsed_btn {
@@ -22,4 +24,41 @@
 
 .nav_title {
     color: white !important;
+}
+
+.seagreen_container {
+    background-color: #1abc9c;
+    height: 500px;
+    padding-top: 50px;
+}
+
+.jumbo {
+    border-radius: 0 !important;
+    background-color: #1abc9c;
+    color: white;
+    text-align: center;
+}
+
+.jumbo img {
+    height: 200px;
+    margin-top: 60px;
+}
+
+.jumbo h1 {
+    font-weight: 700 !important;
+}
+
+.jumbo i {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.jumbo hr {
+    display: inline-block;
+    height: 2px;
+    width: 50px;
+    background-color: white;
+    border-radius: 10px;
+    transform: translateY(7px);
 }

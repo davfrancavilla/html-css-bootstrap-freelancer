@@ -29,9 +29,12 @@
 
 .jumbo {
     border-radius: 0 !important;
-    background-color: #1abc9c;
     color: white;
     text-align: center;
+}
+
+.seagreen {
+    background-color: #1abc9c;
 }
 
 .jumbo img {
@@ -41,10 +44,12 @@
 
 .jumbo h1 {
     font-weight: 700 !important;
+    font-size: 4em;
 }
 
 .star_element {
     padding-bottom: 25px;
+    color: #2c3e50;
 }
 
 .star_element i {
@@ -57,18 +62,36 @@
     display: inline-block;
     height: 2px;
     width: 100px;
-    background-color: white;
+    background-color: #2c3e50;
     border-radius: 10px;
     transform: translateY(7px);
     border: none;
 }
 
+.seagreen,
+.seagreen .star_element {
+    color: white;
+}
 
-/* .prova {
+.seagreen .star_element hr {
+    background-color: white;
+}
+
+.my_box {
     width: 100%;
     height: 100%;
     margin: 0 auto;
-} */
+    position: relative;
+}
+
+.my_box i {
+    color: white;
+    font-size: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 .col_box img {
     height: 100%;
@@ -77,33 +100,168 @@
     border-radius: 10px;
 }
 
-.row_edit>div {
-    margin-bottom: 30px;
-
+.row_edit {
+    margin-bottom: 50px;
 }
 
-/* .green_layer {
+.row_edit>div {
+    margin-bottom: 30px;
+}
+
+.green_layer {
+    display: none;
+}
+
+.my_box:hover .green_layer {
+    display: block;
     height: 100%;
-    width: 90%;
+    width: 100%;
     object-fit: cover;
     border-radius: 10px;
     background-color: #29b096;
     position: absolute;
     top: 0;
     left: 0;
-
 }
 
-.row_edit div:hover {
-} */
+.medium_text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
 
-.row .star_element {
+.star_element h3 {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.transparent_button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.button_section {
+    padding-bottom: 70px;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.transparent_button:hover {
+    background-color: white !important;
+    color: black !important;
+    border-color: white !important;
+}
+
+input.form_control {
+    padding-bottom: 20px;
+}
+
+.form_control {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 20px;
+    color: #6c757d;
+}
+
+.form_control:focus {
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    box-shadow: none;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+.form_row {
+    margin-bottom: 100px;
+}
+
+.green_button {
+    background-color: #1abc9c;
+    border: 2px solid #1abc9c;
+    color: white;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.green_button:hover {
+    background-color: #159a80;
+    border: 2px solid #14937b;
+    color: white;
+}
+
+.blue_section {
+    background-color: #2c3e50;
+}
+
+.blue_section .row {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+.blue_section h3 {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.social_logo {
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 10px;
+}
+
+.logos {
+    margin: 5px auto;
+    display: inline-block;
+}
+
+.social_logo:hover {
+    background-color: white;
     color: #2c3e50;
-}
-.row .star_element hr {
-    background-color:  #2c3e50;
+    transition-duration: 0.3s;
 }
 
+.social_logo i {
+    position: absolute;
+    font-size: 20px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.footer_row {
+    margin-bottom: 50px;
+}
+
+.footer_row a {
+    color: #1abc9c;
+}
+
+.footer_row a:hover {
+    color: #117964;
+}
+
+#copyright {
+    background-color: #1a252f;
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    border: none;
+}
 
 @media screen and (max-width: 420px) {
     .star_element hr {
@@ -115,4 +273,4 @@
     .row_edit {
         width: 400px;
         margin: 0 auto;
-}
+    }
